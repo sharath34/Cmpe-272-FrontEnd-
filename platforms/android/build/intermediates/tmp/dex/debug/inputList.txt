@@ -1,0 +1,2 @@
+/home/sharath/work/cmpe272-final/platforms/android/build/intermediates/classes/debug
+/home/sharath/work/cmpe272-final/platforms/android/build/intermediates/pre-dexed/debug/classes-e5ad0a248bce2f3fe4f612dc04a19948a750adc2.jar

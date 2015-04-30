@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/sharath/work/cmpe272-final/platforms/android/build/intermediates/exploded-aar/android/CordovaLib/unspecified/debug/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6d05dce02f82e6f6d725532b43c07d9d33082621">
+        <dex dex="/home/sharath/work/cmpe272-final/platforms/android/build/intermediates/pre-dexed/debug/classes-e5ad0a248bce2f3fe4f612dc04a19948a750adc2.jar" />
+    </item>
+
+</items>

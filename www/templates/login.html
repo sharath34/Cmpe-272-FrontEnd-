@@ -1,0 +1,67 @@
+<ion-view view-title="Login">
+
+  <ion-content class="padding">
+
+
+
+          <form name="signinForm" novalidate="" ng-submit="signIn(signinForm)">
+
+<script id="templates/form-errors.html" type="text/ng-template">
+      <div class="form-error" ng-message="required">This field is required.</div>
+      <div class="form-error" ng-message="minlength">This field is must be at least 5 characters.</div>
+      <div class="form-error" ng-message="maxlength">This field is must be less than 50 characters</div>
+    </script>
+
+            <div class="list">
+              <label class="item item-input" 
+                     ng-class="{ 'has-error' : signinForm.username.$invalid}">
+                <span class="input-label">Username</span>
+                <input type="text"
+                       name="username"
+                       ng-model="user.username" 
+                       ng-minlength="5" 
+                       ng-maxlength="10" 
+                       required>
+              </label>
+
+              <div class="form-errors" ng-messages="signinForm.username.$error" ng-messages-include="templates/form-errors.html">
+                <div class="form-error" ng-message="maxlength">This field is must be less than 10 characters</div>
+              </div>
+
+              <label class="item item-input" 
+                     ng-class="{ 'has-error' : signinForm.password.$invalid}">
+                <span class="input-label">Password</span>
+                <input type="password"
+                       name="password"
+                       ng-model="user.password" 
+                       ng-minlength="5" 
+                       ng-maxlength="20" 
+                       required>
+              </label>
+
+              <div class="form-errors" ng-messages="signinForm.password.$error" ng-messages-include="templates/form-errors.html">
+                <div class="form-error" ng-message="maxlength">This field is must be less than 20 characters</div>
+              </div>
+
+          
+          </div>
+            <div class="padding">
+              <button class="button button-full button-dark" ui-sref="tab.dash">
+              Sign-In
+              </button>
+            <!--
+              <button class="button button-block button-assertive" ng-click="signIn(user)">
+                Sign-In
+              </button>
+              -->
+
+            </div>
+
+          </form>
+        </ion-content>
+      </ion-view>
+     
+
+
+</ion-content>
+</ion-view view-title>
